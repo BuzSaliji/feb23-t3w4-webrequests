@@ -7,11 +7,18 @@
 </head>
 <body>
 	
-	<button onclick="getRandomPokemon()">Get Pokemon</button>
+	<button onclick="getRandomPokemon()">Get Pokemon through promise</button>
+
+    <button onclick="getRandomPokemonAsync()">Get Pokemon through Async</button>
 
 
     <img id="pokemonImage" src="" />
 
+
+    <script src="./asynsRequest.js"></script>
+    <!-- function named getRandomPokemon now exists with data of await fetch() -->
 	<script src="./promiseRequest.js"></script>
+    <!-- function named getRandomPokemon now exists with data of fetch.then().then().then(.catch()) -->
+    
 </body>
 </html>
